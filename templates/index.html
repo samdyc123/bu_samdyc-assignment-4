@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive LSA Search Engine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        #results {
+            margin-top: 20px;
+        }
+        .result-item {
+            background-color: #f7f7f7;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+        }
+        .similarity-score {
+            color: #1a73e8;
+        }
+    </style>
+</head>
+<body>
+    <h1>Interactive LSA Search Engine</h1>
+    <div id="search-section">
+        <input type="text" id="query-input" placeholder="Enter your search query">
+        <button onclick="performSearch()">Search</button>
+    </div>
+
+    <div id="results"></div>
+    <div id="graph-section">
+        <img id="graph-image" src="" alt="Cosine Similarity Graph">
+    </div>
+
+    <script src="/static/main.js"></script>
+</body>
+</html>
